@@ -12,7 +12,7 @@ MAINTAINER newtork / Alexander Dümont <alexander_duemont@web.de>
 #
 # USAGE
 # -----
-#   docker pull newtork/group-domain-stub
+#   docker pull newtork/groupware-domain-stub
 #
 #
 
@@ -25,21 +25,21 @@ MAINTAINER newtork / Alexander Dümont <alexander_duemont@web.de>
 
 #### Port Usage for samba active directory
 #
-#	Service					Port		Protocol
-#	--------------------	--------	--------
-#	DNS						53			tcp/udp
-#	Kerberos				88			tcp/udp
-#	End Point Mapper		135			tcp
-#	NetBIOS Name Service	137			udp
-#	NetBIOS Datagram		138			udp
-#	NetBIOS Session			139			tcp
-#	LDAP					389			tcp/udp
-#	SMB over TCP			445			tcp
-#	Kerberos kpasswd		464			tcp/udp
-#	LDAPS					636			tcp
-#	Dynamic RPC Ports		1024-5000	tcp
-#	Global Cataloge			3268		tcp
-#	Global Cataloge SSL		3269		tcp
+#    Service                 Port        Protocol
+#    --------------------    --------    --------
+#    DNS                     53          tcp/udp
+#    Kerberos                88          tcp/udp
+#    End Point Mapper        135         tcp
+#    NetBIOS Name Service    137         udp
+#    NetBIOS Datagram        138         udp
+#    NetBIOS Session         139         tcp
+#    LDAP                    389         tcp/udp
+#    SMB over TCP            445         tcp
+#    Kerberos kpasswd        464         tcp/udp
+#    LDAPS                   636         tcp
+#    Dynamic RPC Ports       1024-5000   tcp
+#    Global Cataloge         3268        tcp
+#    Global Cataloge SSL     3269        tcp
 
 EXPOSE 53 88 135 137 138 139 389 445 464 636 1024-1152 3268 3269
 
